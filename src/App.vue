@@ -1,19 +1,20 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import MessageList from './components/MessageList/MessageList.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it! It is a glorious feeling!" />
-    </div>
+    
   </header>
 
   <main>
-    <TheWelcome />
+    <div class="wrapper">
+      <MessageList message="It's a glorious feeling!" message1="Deh tah heh!" message2="You're powered up..."></MessageList>
+      <MessageList message="Get in there." message1="Pressing Q!" message2="Ahee barambassa"></MessageList>
+    </div>
   </main>
 </template>
 
@@ -36,12 +37,6 @@ header {
 
   .logo {
     margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
   }
 }
 </style>
