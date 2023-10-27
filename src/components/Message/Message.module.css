@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+
+}
+
+.deleteButton {
+    margin-left: 5px;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+}
